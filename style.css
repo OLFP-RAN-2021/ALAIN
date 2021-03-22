@@ -1,0 +1,50 @@
+@import url(https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+body {
+    background-image: url(media/ALMD_wallpaper_16.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font
+}
+
+h1 {
+    color: rgb(192, 194, 192);
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+box1 {
+    display: flex;
+    flex-direction: row;
+    li {
+        list-style-type: none;
+        padding: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+header {
+            background: rgb(106, 164, 240);
+            height: 100%;
+}
+
+footer {
+            background: rgb(106, 164, 240);
+            height: 100%;
+        }
+
+.one {
+            flex: 1 1 100;
+        }
+        
+.two {
+            flex: 1 1 50;
+        }
+.three {
+            flex: 1 1 50;
+        }
