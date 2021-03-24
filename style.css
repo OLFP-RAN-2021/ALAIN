@@ -1,26 +1,72 @@
 @import url(https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-
 body {
     background-image: url(media/ALMD_wallpaper_16.jpg);
     background-attachment: fixed;
     background-size: cover;
-    font
+    padding: 1rem;
+    line-height: 120%;
+    font-family: verdana, sans-serif;
+    font-size: 90%;
+}
+
+.navbar {
+    background-color: #579de4;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Change the color of links on hover */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #115fae;
+}
+
+
+/* Add a green background color to the active link */
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Hide the link that should open and close the navbar on small screens */
+
+.navbar .icon {
+    display: none;
 }
 
 h1 {
-    color: rgb(192, 194, 192);
+    color: rgb(31, 89, 148);
 }
 
 h2 {
     color: rgb(255, 255, 255);
 }
 
-box1 {
+nav {
     display: flex;
     flex-direction: row;
     li {
         list-style-type: none;
-        padding: 5px;
+        padding: 10px;
     }
     a {
         text-decoration: none;
@@ -29,22 +75,133 @@ box1 {
 }
 
 header {
-            background: rgb(106, 164, 240);
-            height: 100%;
+    background: rgb(106, 164, 240);
+    height: 100%;
 }
 
 footer {
-            background: rgb(106, 164, 240);
-            height: 100%;
-        }
+    background: rgb(106, 164, 240);
+    height: 100%;
+}
 
 .one {
-            flex: 1 1 100;
-        }
-        
+    flex: 1 1 100;
+}
+
 .two {
-            flex: 1 1 50;
-        }
+    flex: 1 1 50;
+}
+
 .three {
-            flex: 1 1 50;
-        }
+    flex: 1 1 50;
+}
+
+.auto-grid {
+    --auto-grid-min-size: 20rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 10fr));
+    grid-gap: 15px;
+}
+
+.type1 {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: #d4faf5;
+}
+
+.type2 {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: #e1faa6;
+}
+
+.box {
+    display: flex;
+    font-size: 1.2rem;
+    background: transparent;
+    color: #080000;
+}
+
+.box :first-child {
+    width: 150px;
+}
+
+.box>* {
+    flex: 0 0 auto;
+}
+
+.one {
+    flex: 1 1 auto;
+}
+
+.two {
+    flex: 1 1 auto;
+}
+
+.three {
+    flex: 1 1 auto;
+}
+
+.article {
+    padding: 20px;
+    margin: 20px;
+}
+
+.ul {
+    font-size: 1.0rem;
+    background: transparent;
+    color: #000000;
+}
+
+.li {
+    padding: 5rem 1rem;
+    text-align: left;
+    font-size: 0.6rem;
+    background: #a3dcf7;
+    color: #000000;
+}
+
+.p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    clear: both;
+    height: 0;
+    margin: 0px 0 50px;
+    padding: 0;
+    border: 0;
+    font-family: arial;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1;
+}
+
+@-moz-keyframes spin {
+    10% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    10% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    10% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.tourne {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 14s linear infinite;
+}
