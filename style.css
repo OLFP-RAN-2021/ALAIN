@@ -1,4 +1,4 @@
-@import url(https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url(https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css);
 body {
     background-image: url(media/ALMD_wallpaper_16.jpg);
     background-attachment: fixed;
@@ -17,13 +17,10 @@ body {
     width: 100%;
 }
 
-
-/* Style the links inside the navigation bar */
-
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -34,7 +31,7 @@ body {
 /* Change the color of links on hover */
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: rgb(187, 235, 232);
     color: #115fae;
 }
 
@@ -46,19 +43,26 @@ body {
     color: white;
 }
 
-
-/* Hide the link that should open and close the navbar on small screens */
-
 .navbar .icon {
     display: none;
 }
 
 h1 {
-    color: rgb(31, 89, 148);
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(16, 55, 93);
 }
 
 h2 {
+    font-size: larger;
+    font-weight: bold;
     color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(8, 104, 182)
 }
 
 nav {
@@ -75,12 +79,12 @@ nav {
 }
 
 header {
-    background: rgb(106, 164, 240);
+    background-color: rgb(106, 164, 240);
     height: 100%;
 }
 
 footer {
-    background: rgb(106, 164, 240);
+    background-color: rgb(106, 164, 240);
     height: 100%;
 }
 
@@ -107,14 +111,18 @@ footer {
     position: static;
     width: 100%;
     height: 100%;
+    opacity: 0.8;
     background-color: #d4faf5;
+    border-radius: 10px;
 }
 
 .type2 {
     position: static;
     width: 100%;
     height: 100%;
+    opacity: 0.8;
     background-color: #e1faa6;
+    border-radius: 10px;
 }
 
 .box {
@@ -144,9 +152,9 @@ footer {
     flex: 1 1 auto;
 }
 
-.article {
-    padding: 20px;
-    margin: 20px;
+article {
+    padding: 10px;
+    margin: 10px;
 }
 
 .ul {
@@ -175,10 +183,6 @@ hr {
     margin: 0px 0 50px;
     padding: 0;
     border: 0;
-    font-family: arial;
-    text-align: center;
-    font-size: 60px;
-    line-height: 1;
 }
 
 @-moz-keyframes spin {
@@ -198,10 +202,4 @@ hr {
         -webkit-transform: rotate(-360deg);
         transform: rotate(-360deg);
     }
-}
-
-.tourne {
-    -webkit-animation: spin 4s linear infinite;
-    -moz-animation: spin 4s linear infinite;
-    animation: spin 14s linear infinite;
 }
